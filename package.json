@@ -4,13 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "dotenv -e .env.dev next dev --turbopack",
-    "dev:uat": "dotenv -e .env.uat next dev --turbopack",
     "dev:prod": "dotenv -e .env.prod next dev --turbopack",
     "start": "next start",
-    "start:uat": "dotenv -e .env.uat next start",
     "start:prod": "dotenv -e .env.prod next start",
     "lint": "next lint",
-    "build:uat": "dotenv -e .env.uat next build",
     "build": "dotenv -e .env.prod next build",
     "build:prod": "dotenv -e .env.prod next build"
   },
