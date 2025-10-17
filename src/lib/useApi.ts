@@ -80,6 +80,7 @@ export const usePost = <TData = unknown, TVariables = unknown>(
                 if (shouldShowLoader) {
                     showLoader();
                 }
+                console.log("Making API call with baseURL:", api.defaults.baseURL);
                 const response = await api.post<ApiResponse<TData>>(endpoint, variables);
                 if (showSuccessToast && response.data.message) {
                     toast.showSuccess(response.data.message);

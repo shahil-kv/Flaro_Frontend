@@ -2,6 +2,8 @@
 import axios, { AxiosInstance } from "axios";
 import { AUTH_CONFIG } from "@/utils/auth.config";
 
+console.log("API URL:", process.env.NEXT_PUBLIC_API_URL);
+
 // Global variable to track ongoing refresh attempts
 let isRefreshing = false;
 let refreshPromise: Promise<string> | null = null;
